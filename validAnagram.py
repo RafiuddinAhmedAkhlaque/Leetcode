@@ -1,5 +1,7 @@
 class Solution: 
     def valid_anagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
         s_hashmap={}
         t_hashmap={}
         for i in s:
@@ -20,7 +22,7 @@ class Solution:
         return True
 
 instance = Solution()
-print(instance.valid_anagram("box","xobc"))
+print(instance.valid_anagram("xob","boxc"))
 
 # {
 #     a:3,
