@@ -1,3 +1,4 @@
+#All optimal solutions
 class Solution: 
     def two_sum(self, nums: list[int], target: int) -> list[int]:
         hashmap={}
